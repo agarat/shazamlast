@@ -1,7 +1,7 @@
 sounddevice
 scipy
-ShazamAPI
+shazamio
+asyncio
 ffmpeg
 ffprobe
 pydub
-
