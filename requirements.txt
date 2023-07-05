@@ -1,0 +1,7 @@
+sounddevice
+scipy
+ShazamAPI
+ffmpeg
+ffprobe
+pydub
+
