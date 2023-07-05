@@ -8,7 +8,7 @@ RATE = 44100
 DURATION = 10
 
 def record_audio(wav_file_path):
-    rec = sd.rec(int(duration * RATE), samplerate=RATE, channels=2)
+    rec = sd.rec(int(DURATION * RATE), samplerate=RATE, channels=2)
     sd.wait()
     write(wav_file_path, RATE, rec)
 
