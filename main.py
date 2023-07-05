@@ -25,6 +25,6 @@ def recognize_mp3(mp3_file_path):
 if __name__ == '__main__':
     temp_wav = tempfile.TemporaryFile(suffix='.wav')
     temp_mp3 = tempfile.TemporaryFile(suffix='.mp3')
-    record_audio(temp_wav)
-    convert_to_mp3(temp_wav, temp_mp3)
-    print(next(recognize_mp3(temp_mp3)))
+    record_audio(temp_wav.name)
+    convert_to_mp3(temp_wav.name, temp_mp3.name)
+    print(next(recognize_mp3(temp_mp3.name)))
